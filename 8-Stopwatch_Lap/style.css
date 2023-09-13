@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@400;700&family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-c: #444;
+  --grey-c: #f3f3f3;
+  --bg-c: #eee;
+  --border-radius: 25px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  overflow: hidden;
+  margin: 10%;
+  border-radius: 20px;
+  background-color: var(--dark-c);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: var(--grey-c);
+  letter-spacing: 10px;
+  text-shadow: #fc0 1px 0 10px;
+  /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+}
+
+.btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  transition: transform 0.1s ease;
+}
+
+.btn:active {
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(0.88);
+}
+
+.lap-time {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 400px;
+  font-size: 6rem;
+  background-color: var(--bg-c);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--bg-c);
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 5%; */
+}
+
+#tens {
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+
+.laps-container {
+  width: 400px;
+  margin: 4rem auto;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.laps-container span {
+  letter-spacing: 3px;
+}
+
+.laps-container li {
+  border-radius: var(--border-radius);
+}
+
+.laps-container li:nth-child(odd) {
+  background-color: var(--bg-c);
+}
+.laps-container li:nth-child(even) {
+  color: var(--grey-c);
+}
+
+.diming-effect {
+  animation: dimAnimation 1s linear infinite;
+}
+
+@keyframes dimAnimation {
+  0% {
+    box-shadow: inset 0 0 10px 2px rgba(255, 0, 0, 0.3);
+    color: var(--dark-c);
+  }
+  100% {
+    box-shadow: inset 0 0 80px 2px rgba(255, 0, 0, 0.1);
+    color: black;
+  }
+}
