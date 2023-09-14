@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@400;700&family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-btn-dark: #361436;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-btn-dark);
+  font-size: 40px;
+  border: 3px solid var(--c-btn-dark);
+  padding: 40px 80px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s, transform 0.1s;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--c-btn-dark);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+a:hover:before {
+  transform: translateX(0);
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:active {
+  transform: scale(0.98);
+}
