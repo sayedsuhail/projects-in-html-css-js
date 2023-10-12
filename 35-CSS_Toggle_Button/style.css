@@ -32,14 +32,13 @@
   border-radius: 50%;
   position: absolute;
   top: -4px;
-  left: -5px;
+  left: -2px;
   box-shadow: 0 0 5px #aaa;
   transition: left 0.5s;
 }
 
 #check:checked ~ .toggle .circle {
-  /* sub width*2 and border from left: 5*2 + 27 = 37 */
-  left: calc(100% - 37px);
+  left: calc(100% - 60px);
 }
 
 #check:checked ~ .toggle {
