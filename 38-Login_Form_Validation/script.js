@@ -72,7 +72,7 @@ const showRequestForm = document.querySelector(".reset-password")
 showRequestForm.addEventListener("click", (e) => {
   e.preventDefault()
   if (requestForm.style.display !== "block") {
-    loginContainerEl.style.minHeight = "620px"
+    loginContainerEl.style.minHeight = "650px"
     requestForm.style.display = "block"
   } else {
     requestForm.style.display = "none"
