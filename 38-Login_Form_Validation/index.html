@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Materialize CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login From Validation</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="https://google.com" id="loginForm">
+        <!-- for username -->
+        <div class="form-field">
+          <label for="loginUsername">User Name</label>
+          <input type="text" id="loginUsername" placeholder="Enter user name" />
+          <small class="alert-message">Error</small>
+        </div>
+        <!-- for password -->
+        <div class="form-field">
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter password"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <!-- show/hide password -->
+        <div class="form-field">
+          <i class="far fa-eye"></i>
+          <label>show/hide password</label>
+        </div>
+        <!-- Button -->
+        <button class="btn" type="submit">Go</button>
+      </form>
+      <!-- Reset password -->
+      <div class="reset-password">
+        <small><a href="#">Forgot username or password</a></small>
+      </div>
+      <form action="#" class="form-request">
+        <div class="form-field">
+          <label for="requestEmail">Email</label>
+          <input
+            type="email"
+            name=""
+            id="requestEmail"
+            placeholder="Enter your email"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <button class="btn red" type="submit">Reset</button>
+      </form>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
