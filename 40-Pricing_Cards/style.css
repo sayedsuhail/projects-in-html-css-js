@@ -85,3 +85,20 @@ body {
 .card-body .fa-times {
   color: #911832;
 }
+
+.card-footer button {
+  width: 120px;
+  padding: 10px;
+  background-color: chocolate;
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid chocolate;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
