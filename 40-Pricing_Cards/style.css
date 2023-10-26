@@ -110,3 +110,17 @@ body {
   cursor: pointer;
   margin-bottom: 10px;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    height: 100%;
+  }
+
+  .cards-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 50px;
+  }
+}
