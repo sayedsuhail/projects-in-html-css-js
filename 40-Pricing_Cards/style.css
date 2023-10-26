@@ -1,16 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@400;700&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Slabo+27px&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+.container {
+  width: 100%;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  background-color: #ddd;
+}
+
+.cards-wrapper {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  background: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwbmF0dXJlfGVufDB8fDB8fHww")
+    center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.card-header {
+  margin-bottom: 40px;
+}
+
+.card-header h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: chocolate;
+  margin: 30px;
+  border-bottom: 1px groove #fff;
+  padding: 10px;
+}
+
+.card-header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.card-header sup {
+  font-size: 35px;
+}
+
+.card-header span {
+  font-size: 18px;
 }
