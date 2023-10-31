@@ -46,4 +46,9 @@ form {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border-radius: 0 10px 10px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+  background-color: #3e8e41;
 }
