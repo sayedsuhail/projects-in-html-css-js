@@ -13,8 +13,6 @@ async function searchImages() {
 
   const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${ACCESS_KEY}`
 
-  console.log(url)
-
   const response = await fetch(url)
   const data = await response.json()
   if (page === 1) {
@@ -44,8 +42,6 @@ async function searchImages() {
   if (page > 1) {
     btn_showMore.style.display = "block"
   }
-
-  console.log(data.results)
 }
 
 formEl.addEventListener("submit", (e) => {
