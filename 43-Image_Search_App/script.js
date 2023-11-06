@@ -39,8 +39,10 @@ async function searchImages() {
     searchResultsEl.appendChild(imageWrapper)
   })
 
+  page++
+
   if (page > 1) {
-    btn_showMore.style.display = block
+    btn_showMore.style.display = "block"
   }
 
   console.log(data.results)
