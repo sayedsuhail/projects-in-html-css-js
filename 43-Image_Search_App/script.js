@@ -53,3 +53,7 @@ formEl.addEventListener("submit", (e) => {
   page = 1
   searchImages()
 })
+
+btn_showMore.addEventListener("click", () => {
+  searchImages()
+})
