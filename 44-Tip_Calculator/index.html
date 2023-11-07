@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -8,6 +9,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- materialize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +23,53 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <h1>Tip Calculator</h1>
+    <div id="Container" class="card">
+      <h1 class="text-prim">Tip Calculator</h1>
+      <!-- calculator -->
+      <div id="Calculator">
+        <form>
+          <div class="form-group">
+            <label for="Bill">How much was your bill</label>
+            <input type="number" id="Bill" placeholder="Bill amount" />
+          </div>
 
+          <div class="form-group">
+            <label>How many people are sharing the bill</label>
+            <input
+              type="number"
+              id="Peopleamount"
+              placeholder="Number of people"
+            />
+          </div>
+
+          <!-- select option -->
+          <h4 class="text-prim">How was your service?</h4>
+          <div class="input-fields">
+            <select id="ServiceQual">
+              <option value="0" disabled selected>Choose your option</option>
+              <option value="0.3">30% Outstanding</option>
+              <option value="0.2">20% Good</option>
+              <option value="0.15">315% Ok</option>
+              <option value="0.1">10% Bad</option>
+              <option value="0.05">05% Terrible</option>
+            </select>
+          </div>
+
+          <!-- submit button -->
+          <button class="btn" type="submit">Calculate</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <ul id="Result" class="text-sec">
+      <li>Tip: <span id="Tip"></span></li>
+      <li>Total bill with tip: <span id="Total_Bill_Tip"></span></li>
+      <li>Tip/Person: <span id="Div_Tip"></span></li>
+      <li>Total bill with tip/person: <span id="Div_Tip-Person"></span></li>
+    </ul>
+
+    <!-- script -->
     <script src="script.js"></script>
   </body>
 </html>
