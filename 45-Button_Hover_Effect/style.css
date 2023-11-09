@@ -14,3 +14,15 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.btn {
+  border: 2px solid tomato;
+  background: none;
+  color: tomato;
+  padding: 20px 40px;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
